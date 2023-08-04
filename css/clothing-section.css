@@ -1,0 +1,116 @@
+.cloth-card {
+  justify-content: center;
+  max-width: 992px;
+  margin: 20px auto;
+
+  /* background-image: radial-gradient(#f0e160, #bebbbb);
+  box-shadow: 0 0 15px #0000003a;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s linear; */
+
+  background: linear-gradient(180deg,transparent 38%,
+  rgba(0,0,0,.01) 44%,rgba(0,0,0,.03) 51%,rgba(0,0,0,.06) 59%,rgba(0,0,0,.13) 66%,rgba(0,0,0,.25) 74%,rgba(0,0,0,.5) 91%);
+  
+}
+
+.cloth-card:hover {
+  transform: scale(1.04);
+}
+
+.cloth-card-img {
+
+  max-width: 425px;
+  overflow: hidden;
+}
+
+.cloth-card-img img {
+  width: 100%;
+  margin-bottom: -2px;
+  transition: transform 0.3s linear;
+}
+.cloth-card-img:hover img {
+  transform: scale(1.06);
+}
+.cloth-card-content {
+  flex: 1;
+  padding: 25px;
+  text-align: center;
+}
+.cloth-card-content h3 {
+  font-size: 32px;
+  color: var(--secondary);
+}
+.cloth-card-content h4 {
+  font-size: 20px;
+  margin: 15px 0;
+  color: var(--secondary);
+}
+.cloth-card-content p {
+  font-size: 17px;
+}
+
+.card_line {
+  margin: 25px auto;
+  height: 3px;
+  background-color: var(--secondary);
+  width: 111px;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .cloth-card {
+    flex-direction: column;
+  }
+  .cloth-card.mens_card {
+    flex-direction: column-reverse;
+  }
+  .cloth-card-img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .cloth-card-content {
+    text-align: center;
+    padding: 100px 25px;
+  }
+  .card_line {
+    margin: 8px auto;
+  }
+  .cloth-card-content h3 {
+    font-size: 24px;
+  }
+  .cloth-card-content h4 {
+    font-size: 17px;
+  }
+  .cloth-card-content p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .cloth-card-content {
+    padding: 40px 25px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .text-animation span {
+    font-size: 22px;
+  }
+  .section_title {
+    font-size: 2.1rem;
+  }
+  .sub_title{
+    font-size: 2rem;
+  }
+  .chat-box {
+    font-size: 15px;
+    padding: 10px 8px;
+  }
+  .btn-outline {
+    margin: 25px auto;
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+  .btn {
+    margin-bottom: 20px;
+  }
+}

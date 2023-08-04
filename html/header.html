@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>header</title>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="../css/header.css" />
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+  </head>
+  <body>
+    <!-- header start  -->
+    <header class="header">
+      <div class="web_container">
+        <div class="web_row header_row">
+          <!-- 1st column -->
+          <div class="header_logo">
+            <a href="#">
+              <i class="fa-solid fa-globe"></i>
+              SAASINA
+            </a>
+          </div>
+          <!-- 2nd column -->
+            <nav class="navbar">
+              <i  class="fas fa-times" id="close-btn"></i>
+              <a href="#">Home</a>
+              <a href="./html/products.html">products</a>
+              <a href="./html/category.html">category</a>
+              <a href="./html/deal.html">deal</a>
+              <a href="./html/contact.html">contact us</a>
+            </nav>
+          <!-- 3rd column -->
+          <div class="header_icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-shopping-cart" id="cart-btn"></i>
+            <i  class="fas fa-bars" id="menu-btn"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    
+    <!-- script -->
+    <script>
+        let sidebar = document.querySelector(".navbar");
+        let menuBtn = document.querySelector("#menu-btn");
+        let closeBtn = document.querySelector("#close-btn");
+        menuBtn.addEventListener("click", () => {
+          sidebar.classList.add("sidebar-opened");
+        });
+        closeBtn.addEventListener("click", () => {
+          sidebar.classList.remove("sidebar-opened");
+        })
+    </script>
+  </body>
+</html>
