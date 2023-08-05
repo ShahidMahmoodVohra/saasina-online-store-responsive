@@ -8,7 +8,7 @@
   --black: #000;
   --primary: #e41e3f;
   /* --secondary: #e41e3f; */
-  --secondary:#000;
+  --secondary: #000;
 }
 
 * {
@@ -51,9 +51,9 @@ h6 {
 p {
   font-size: 16px;
 }
-.text_small-18{
+.text_small-18 {
   font-size: 18px;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   padding-top: 10px;
 }
 
@@ -136,7 +136,7 @@ p {
 .btn:hover {
   color: #fff;
   background: #e41e3f;
-  background-color:  rgba(165, 165, 165, 0.2);
+  background-color: rgba(165, 165, 165, 0.2);
 
   letter-spacing: 0.2rem;
   border: 1px solid #e41e3f;
@@ -178,7 +178,6 @@ p {
 .btn-outline:hover {
   /* color: #f0e160; */
   color: #fff;
-
 }
 .btn-but:hover::before,
 .btn-outline:hover::before {
@@ -201,7 +200,7 @@ p {
   position: relative;
   transition: color 0.3s ease-in-out;
 }
-.btn-entity:hover{
+.btn-entity:hover {
   background: var(--grey);
   color: var(--white);
 }
@@ -364,7 +363,7 @@ p {
   width: 100%;
   font-size: 15px;
 }
-.product_card_details .btn:hover{
+.product_card_details .btn:hover {
   color: var(--grey);
 }
 /* Sports section Ends */
@@ -413,8 +412,16 @@ p {
   left: 0;
   top: 0;
   background: var(--optional);
-  background-image: linear-gradient(180deg,transparent 38%,
-  rgba(0,0,0,.01) 44%,rgba(0,0,0,.03) 51%,rgba(0,0,0,.06) 59%,rgba(0,0,0,.13) 66%,rgba(0,0,0,.25) 74%,rgba(0,0,0,.5) 91%);
+  background-image: linear-gradient(
+    180deg,
+    transparent 38%,
+    rgba(0, 0, 0, 0.01) 44%,
+    rgba(0, 0, 0, 0.03) 51%,
+    rgba(0, 0, 0, 0.06) 59%,
+    rgba(0, 0, 0, 0.13) 66%,
+    rgba(0, 0, 0, 0.25) 74%,
+    rgba(0, 0, 0, 0.5) 91%
+  );
 
   transform: rotateY(180deg);
   padding: 25px;
@@ -636,10 +643,10 @@ form input::placeholder {
   width: 350px;
   max-width: 350px;
   box-shadow: 1rem 1rem 1rem #888;
-  transition: transform .5s box-shadow .5s;
+  transition: transform 0.5s box-shadow 0.5s;
   margin: 5rem 10px;
 }
-.electronic_card_main::before{
+.electronic_card_main::before {
   content: "";
   height: 100%;
   width: 1rem;
@@ -649,9 +656,9 @@ form input::placeholder {
   left: -1rem;
   transform: skewY(45deg);
   transform-origin: right;
-  box-shadow: -.1rem -.1rem .1rem #333;
+  box-shadow: -0.1rem -0.1rem 0.1rem #333;
 }
-.electronic_card_main::after{
+.electronic_card_main::after {
   content: "";
   height: 1rem;
   width: 100%;
@@ -661,13 +668,12 @@ form input::placeholder {
   left: 0;
   transform: skewX(45deg);
   transform-origin: bottom;
-  box-shadow: -.1rem -.1rem .1rem #333;
+  box-shadow: -0.1rem -0.1rem 0.1rem #333;
 }
-.electronic_card_main:hover{
+.electronic_card_main:hover {
   transform: rotateY(10deg) skewX(-1deg) translateY(-3rem);
   box-shadow: 1.5rem 1.5rem 1.5rem #888;
 }
-
 
 .electronic_card_img {
   width: 100%;
@@ -721,8 +727,7 @@ form input::placeholder {
   width: 100%;
   max-width: 325px;
   text-align: center;
-  transition: transform .5s;
-
+  transition: transform 0.5s;
 }
 .box_heading h3 {
   font-size: 25px;
@@ -745,11 +750,11 @@ form input::placeholder {
   position: relative;
   box-shadow: 1rem 1rem 1rem #888;
 }
-.box_category:hover{
+.box_category:hover {
   transform: rotateY(10deg) skewX(-1deg) translateY(-1rem);
   /* box-shadow: 2rem 2rem 2rem #888; */
 }
-.box_card::before{
+.box_card::before {
   content: "";
   height: 100%;
   width: 1rem;
@@ -759,9 +764,9 @@ form input::placeholder {
   left: -1rem;
   transform: skewY(45deg);
   transform-origin: right;
-  box-shadow: -.1rem -.1rem .1rem #333;
+  box-shadow: -0.1rem -0.1rem 0.1rem #333;
 }
-.box_card::after{
+.box_card::after {
   content: "";
   height: 1rem;
   width: 100%;
@@ -771,7 +776,7 @@ form input::placeholder {
   left: 0;
   transform: skewX(45deg);
   transform-origin: bottom;
-  box-shadow: -.1rem -.1rem .1rem #333;
+  box-shadow: -0.1rem -0.1rem 0.1rem #333;
 }
 
 .box_card img {
@@ -785,7 +790,7 @@ form input::placeholder {
   background-color: var(--secondary);
   color: var(--white);
   border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 0px ;
+  border-bottom-right-radius: 0px;
   margin-top: -5px;
 
   transform: translate(-1px, -45px);
@@ -846,9 +851,10 @@ form input::placeholder {
   text-align: center;
   padding: 5px 0;
   column-gap: 15px;
-} */
+}
+*/
 /* code from saasina food gallery */
-.section-deal{
+.section-deal {
   padding: 5rem 0;
 }
 .gallery {
@@ -1117,7 +1123,7 @@ form input::placeholder {
 .text_small {
   text-transform: capitalize;
 }
-.text_small_email{
+.text_small_email {
   text-transform: lowercase;
 }
 .contact .content {
@@ -1286,12 +1292,19 @@ form input::placeholder {
 .logo-end i {
   padding-right: 1rem;
 }
-.footer {
-  /* background-image: radial-gradient(#f0e160, #bebbbb); */
-  background: linear-gradient(180deg,transparent 38%,
-  rgba(0,0,0,.01) 44%,rgba(0,0,0,.03) 51%,rgba(0,0,0,.06) 59%,rgba(0,0,0,.13) 66%,rgba(0,0,0,.25) 74%,rgba(0,0,0,.5) 91%);
 
-  
+.footer {
+  background: linear-gradient(
+    180deg,
+    transparent 38%,
+    rgba(0, 0, 0, 0.01) 44%,
+    rgba(0, 0, 0, 0.03) 51%,
+    rgba(0, 0, 0, 0.06) 59%,
+    rgba(0, 0, 0, 0.13) 66%,
+    rgba(0, 0, 0, 0.25) 74%,
+    rgba(0, 0, 0, 0.5) 91%
+  );
+
   border-top: 2px solid rgba(0, 0, 0, 0.2);
   padding: 13px 0px 0px 0px;
 }
@@ -1307,7 +1320,7 @@ form input::placeholder {
 }
 .footer .box-container .box .share a {
   display: inline-block;
-  margin:  1px;
+  margin: 1px;
   padding: 2.5px;
   height: 4.3rem;
   width: 4.3rem;
@@ -1316,15 +1329,12 @@ form input::placeholder {
   border-radius: 50%;
 }
 
-
 .footer .box-container .box h3 {
   font-size: 2.2rem;
   color: black;
   /* padding: 0 0 0 3.5rem; */
 }
-/* .footer .box-container .box .app {
-  padding: 0 0 0 6rem;
-} */
+
 
 .footer .box-container .box p {
   font-size: 1.3rem;
@@ -1370,212 +1380,4 @@ form input::placeholder {
 }
 /* footer section end */
 
-@media screen and (max-width: 768px) {
 
-  .product_card {
-    width: 100%;
-    max-width: 48%;
-  }
-  .col {
-    flex-basis: 50%;
-  }
-  .contactForm {
-    width: 51%;
-    padding: 2rem 1.6rem;
-  }
-  .contactForm_login {
-    width: 95%;
-    padding: 2rem 1.6rem;
-  }
-  .gallery{
-    margin: 5rem 8rem;
-  }
-  .food-img{
-    width: 60vw;
-    height: 90vw;
-  }
-    .food-name {
-      position: absolute;
-      top: 15rem;
-      left: 8rem;
-      font-size: 3rem;
-      font-weight: 500;
-      text-transform: uppercase;
-      letter-spacing: 0;
-    
-  }
-  .food-description {
-    position: absolute;
-    bottom: 22vw;
-    left: 6rem;
-    width: 64%;
-    font-size: 2rem;
-    
-}
-  .footer .box-container .box {
-    padding: 1rem 84px;
-  }
-}
-
-@media screen and (max-width: 426px) {
-  .section_title {
-    font-size: 24px;
-  }
-  .sub_title {
-    font-size: 22px;
-  }
-  #arrival_section {
-    padding: 5px 0;
-  }
-  .new_arrival h2 {
-    font-size: 30px;
-    letter-spacing: 2px;
-  }
-  .sports_card {
-    width: 100%;
-    max-width: 100%;
-    margin: 10px;
-  }
-  .product_card_img {
-    min-height: 100px;
-  }
-  .product_card_details h5 {
-    font-size: 15px;
-  }
-  .product_card_details .price {
-    font-size: 14px;
-  }
-  .product_card_details .web_btn {
-    font-size: 13px;
-    padding: 9px 3px;
-  }
-  .col {
-    flex-basis: 100%;
-  }
-  .container-contact {
-    flex-direction: column-reverse;
-  }
-  .container-contact-reg {
-    flex-direction: column;
-  }
-  .login_direction {
-    flex-direction: column;
-  }
-  .contactForm {
-    width: 90%;
-    padding: 2rem 3.6rem;
-    margin-bottom: 20px;
-  }
-  .contactForm_login {
-    width: 90%;
-    padding: 2rem 3.6rem;
-    margin-bottom: 0;
-  }
-  .btns_login {
-    padding: 0px 0px 17px 30px;
-    margin: 0;
-  }
-  .contact .content h2 {
-    font-size: 2.5rem;
-  }
-  .contact .content p {
-    font-size: 1.5rem;
-  }
-  .gallery{
-    margin: 0 2rem;
-  }
-  .food-img{
-    width: 50vw;
-    height: 80vw;
-  }
-    .food-name {
-      position: absolute;
-      top: 8rem;
-      left: 4rem;
-      font-size: 1.5rem;
-      font-weight: 500;
-      text-transform: uppercase;
-      letter-spacing: 0;
-    
-  }
-  .food-description {
-    position: absolute;
-    bottom: 16vw;
-    left: 4rem;
-    width: 64%;
-    font-size: 1rem;
-    
-}
-
-  .footer .credit {
-    padding: 1.5rem 1rem;
-    font-size: 1.5rem;
-  }
-}
-@media screen and (max-width: 376px) {
-  .container-contact .contactInfo {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-
-  .food-name {
-    position: absolute;
-    top: 7rem;
-    left: 3rem;
-    font-size: 1.3rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-  
-}
-.food-description {
-  position: absolute;
-  bottom: 17vw;
-  left: 3rem;
-  width: 68%;
-  font-size: .9rem;
-  font-weight: 300;
-  
-}
-
-}
-@media screen and (max-width: 322px) {
-  .btn-1{
-    max-width: 270px;
-    width: 100%;
-  }
-  .container-contact .contactInfo {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-.contactForm_login{
-  padding: 2rem 2.5rem;
-  width: 100%;
-}
-  
-  .food-name {
-    position: absolute;
-    top: 6rem;
-    left: 2rem;
-    font-size: 1.1rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0
-  
-}
-.food-description {
-  position: absolute;
-  bottom: 12vw;
-  left: 2rem;
-  width: 68%;
-  font-size: .8rem;
-  font-weight: 300;
-  
-}
-.logo-end i {
-  padding-right: 1rem;
-  margin-left: 5rem;
-}
-
-}

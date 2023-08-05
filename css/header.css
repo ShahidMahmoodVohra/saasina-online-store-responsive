@@ -213,6 +213,11 @@
   color: #313131 !important;
 }
 
+
+
+
+
+
 /* Media Query Start */
 
 @media screen and (max-width: 850px) {
@@ -290,6 +295,7 @@
   }
 }
 
+
 @media screen and (max-width: 768px) {
   .search-form {
     top: calc(100% + 16px);
@@ -298,9 +304,137 @@
     padding: 6px 8px;
     border-radius: 5px;
   }
+
+  .product_card {
+    width: 100%;
+    max-width: 48%;
+  }
+  .col {
+    flex-basis: 50%;
+  }
+  .contactForm {
+    width: 51%;
+    padding: 2rem 1.6rem;
+  }
+  .contactForm_login {
+    width: 95%;
+    padding: 2rem 1.6rem;
+  }
+  .gallery {
+    margin: 5rem 8rem;
+  }
+  .food-img {
+    width: 60vw;
+    height: 90vw;
+  }
+  .food-name {
+    position: absolute;
+    top: 15rem;
+    left: 8rem;
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0;
+  }
+  .food-description {
+    position: absolute;
+    bottom: 22vw;
+    left: 6rem;
+    width: 64%;
+    font-size: 2rem;
+  }
+  .footer .box-container .box {
+    padding: 1rem 84px;
+  }
 }
 
 @media screen and (max-width: 425px) {
+  .section_title {
+    font-size: 24px;
+  }
+  .sub_title {
+    font-size: 22px;
+  }
+  #arrival_section {
+    padding: 5px 0;
+  }
+  .new_arrival h2 {
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+  .sports_card {
+    width: 100%;
+    max-width: 100%;
+    margin: 10px;
+  }
+  .product_card_img {
+    min-height: 100px;
+  }
+  .product_card_details h5 {
+    font-size: 15px;
+  }
+  .product_card_details .price {
+    font-size: 14px;
+  }
+  .product_card_details .web_btn {
+    font-size: 13px;
+    padding: 9px 3px;
+  }
+  .col {
+    flex-basis: 100%;
+  }
+  .container-contact {
+    flex-direction: column-reverse;
+  }
+  .container-contact-reg {
+    flex-direction: column;
+  }
+  .login_direction {
+    flex-direction: column;
+  }
+  .contactForm {
+    width: 90%;
+    padding: 2rem 3.6rem;
+    margin-bottom: 20px;
+  }
+  .contactForm_login {
+    width: 90%;
+    padding: 2rem 3.6rem;
+    margin-bottom: 0;
+  }
+  .btns_login {
+    padding: 0px 0px 17px 30px;
+    margin: 0;
+  }
+  .contact .content h2 {
+    font-size: 2.5rem;
+  }
+  .contact .content p {
+    font-size: 1.5rem;
+  }
+  .gallery {
+    margin: 0 2rem;
+  }
+  .food-img {
+    width: 50vw;
+    height: 80vw;
+  }
+  .food-name {
+    position: absolute;
+    top: 8rem;
+    left: 4rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0;
+  }
+  .food-description {
+    position: absolute;
+    bottom: 16vw;
+    left: 4rem;
+    width: 64%;
+    font-size: 1rem;
+  }
   .cart-btn,
   .search-btn {
     display: none;
@@ -331,20 +465,59 @@
   .logo-end {
     font-size: 2.5rem;
   }
-  /* .footer .box-container .box h3 {
-    font-size: 2rem;
-  }
-  
-  .footer .box-container  {
-    flex-wrap: nowrap;
 
+  .footer .box-container .box {
+    padding: 1rem 48px;
+    flex: 1 1 20rem;
+    display: block;
   }
-  .footer .box-container .box  {
-  padding: 0rem 1rem;
-  }  */
+
+  .footer .credit {
+    padding: 1.5rem 1rem;
+    font-size: 1.5rem;
+  }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 375px) {
+  .product_card_details .btn {
+    font-size: 12px;
+  }
+
+  .container-contact .contactInfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .food-name {
+    position: absolute;
+    top: 7rem;
+    left: 3rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+  }
+  .food-description {
+    position: absolute;
+    bottom: 17vw;
+    left: 3rem;
+    width: 68%;
+    font-size: 0.9rem;
+    font-weight: 300;
+  }
+  .footer .box-container .box {
+    padding: 1rem 32px;
+    flex: 1 1 18rem;
+    display: block;
+  }
+  .footer .box-container .box .share a {
+    height: 4rem;
+    width: 4rem;
+  }
+}
+
+/* @media screen and (max-width:350px) {
   .header_logo {
     font-size: 20px;
   }
@@ -355,4 +528,49 @@
   .header_logo a i {
     margin-bottom: 2px;
   }
+  
+} */
+
+@media screen and (max-width: 320px) {
+  .btn-1 {
+    max-width: 270px;
+    width: 100%;
+  }
+  .container-contact .contactInfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .contactForm_login {
+    padding: 2rem 2.5rem;
+    width: 100%;
+  }
+
+  .food-name {
+    position: absolute;
+    top: 6rem;
+    left: 2rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0;
+  }
+  .food-description {
+    position: absolute;
+    bottom: 12vw;
+    left: 2rem;
+    width: 68%;
+    font-size: 0.8rem;
+    font-weight: 300;
+  }
+  .product_card_details .btn {
+    font-size: 11px;
+    padding: 8px;
+  }
+  .footer .box-container .box {
+    padding: 1rem 32px;
+    flex: 1 1 16rem;
+    display: block;
+  }
 }
+/* Media Query End */
