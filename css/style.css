@@ -187,23 +187,28 @@ p {
   display: flex;
   justify-content: center;
   margin-top: -50px;
+  /* position: fixed; */
 }
 
 .btn-entity {
-  background: none;
-  color: var(--secondary);
+  background: var(--secondary);
+  color: var(--optional);
   border: 0.5px solid var(--secondary);
   font-size: 35px;
   margin: 30px 0px 20px 0px;
-  padding: 7px 25px;
+  padding: 0 15px;
   border-radius: 5px;
-  position: relative;
-  transition: color 0.3s ease-in-out;
+  position: fixed;
+  bottom: 55px;
+  right: 15px;
+  transition: color 0.5s ease-in-out;
 }
+
 .btn-entity:hover {
-  background: var(--grey);
-  color: var(--white);
+  background: var(--optional);
+  color: var(--secondary);
 }
+
 .mx_auto {
   margin-left: auto;
   margin-right: auto;
@@ -261,25 +266,7 @@ p {
   background-color: var(--optional);
   color: var(--secondary);
 }
-/* .btn-nav {
-  display: inline-block;
-  margin-top: 1.8rem;
-  background-color: #e41e3f;
-  color: #fff;
-  width: 100%;
-  padding: 1rem 1.3rem;
-  font-size: 1.8rem;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: all 1s;
-}
-.btn-nav:hover {
-  color: #e41e3f;
-  background: #f0e160;
-  letter-spacing: 0.2rem;
-  border: 1px solid #e41e3f;
-} */
+
 
 /* Electronics section Starts */
 .category_items_row {
@@ -310,13 +297,14 @@ p {
 
 .product_row {
   flex-wrap: wrap;
-  max-width: 920px;
+  max-width: 1080px;
   margin: 25px auto;
-  gap: 9px;
+  gap: 15px;
 }
 .product_card {
   width: 100%;
-  max-width: 300px;
+  max-width: 350px;
+  min-width: 250px;
   background-color: #eee;
   box-shadow: 0 0 15px #f0e26071;
   border-radius: 8px;
@@ -391,9 +379,11 @@ p {
 }
 .card img {
   width: 100%;
+  width: 425px;
   max-width: 100%;
   object-fit: cover;
   height: 100%;
+  min-height: 550px;
 }
 .inner-box {
   position: relative;
@@ -443,56 +433,6 @@ p {
   transform: rotateY(-180deg);
 }
 
-/* .box {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: 5px auto;
-  position: relative;
-  perspective: 10000px;
-}
-.box .box-img {
-  flex-basis: 30%;
-  overflow: hidden;
-  transform: rotateY(0);
-  transition: all 0.5s ease-in-out 0s;
-}
-.box:hover .box-img {
-  transform: rotateY(-180deg);
-}
-.box .box-img img {
-  width: 320px;
-  height: 412px;
-}
-.box .box-content .new-arrival-h3,
-.new-arrival-p3 {
-  padding: 10px 5px;
-  font-weight: lighter;
-  font-style: italic;
-  background: var(--grey);
-  color: #fff;
-  align-items: center;
-  margin-top: 30px;
-}
-.box .box-content {
-  width: 320px;
-  height: 412px;
-  position: relative;
-  left: 0;
-  top: 0;
-  padding: 80px 20px;
-  text-align: center;
-  color: var(--white);
-  background: rgba(0, 0, 0, 0.1);
-  transform: rotateY(88.9deg);
-}
-.box:hover .box-content {
-  transform: rotateY(0);
-  transition: all 0.9s ease-in-out 0s;
-} */
-
-/* Heading & Form section start "Get on the list" */
 
 .new_arrival h2 {
   text-align: center;
@@ -606,16 +546,6 @@ form input::placeholder {
 
 /* category section start */
 
-/* .heading-category {
-
-  font-size: 25px;
-  display: flex;
-  color: var(--grey);
-  justify-content: start;
-  align-items: center;
-  padding: 30px;
-  text-decoration: underline;
-} */
 
 .electronic_category {
   gap: 5rem;
@@ -699,6 +629,7 @@ form input::placeholder {
 }
 .sports_section {
   margin: 8rem;
+  margin: 10rem 8rem;
 }
 
 .sports_category {
@@ -707,6 +638,7 @@ form input::placeholder {
   max-width: 920px;
   margin: 25px auto;
   gap: 10px;
+  gap: 20px;
 }
 
 /* Category section Start */
@@ -1029,14 +961,16 @@ form input::placeholder {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: url(../images/bg6.avif);
+  /* background: url(../images/bg6.avif); */
+  background: #818181;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   opacity: 0.8;
 }
 
 .contact .content {
-  max-width: 100rem;
+  /* max-width: 100rem; */
+  max-width: 1250px;
   text-align: center;
   padding-bottom: 4rem;
 }
@@ -1058,7 +992,8 @@ form input::placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 1250px;
+  /* width: 100%; */
   margin-top: 3rem;
 }
 .container-contact-reg {
@@ -1102,7 +1037,8 @@ form input::placeholder {
   color: var(--secondary);
 }
 .contactForm {
-  width: 90%;
+  /* width: 90%; */
+  width: 100%;
   padding: 2rem 4rem;
   background: #fff;
 }

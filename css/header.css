@@ -4,7 +4,6 @@
   left: 0;
   width: 100%;
   z-index: 20;
-  /* border-bottom: 0.2px solid #f0e160; */
   background: var(--grey);
   color: var(--optional);
   padding: 12px 16px;
@@ -64,10 +63,9 @@
 }
 
 .navbar a:hover {
-  color: #f0e160;
-  color: #fff;
   border-bottom: 0.1rem solid #fff;
   padding-bottom: 0.5rem;
+  
 }
 
 #close-btn,
@@ -213,12 +211,27 @@
   color: #313131 !important;
 }
 
-
-
-
-
-
 /* Media Query Start */
+
+@media screen and (max-width: 1024px) {
+  .product_row {
+    flex-wrap: wrap;
+    max-width: 741px;
+    margin: 25px auto;
+    gap: 15px;
+  }
+  .contact .content {
+    max-width: 100rem;
+    text-align: center;
+    padding-bottom: 4rem;
+  }
+  .container-contact {
+    max-width: 100rem;
+  }
+  .contactForm {
+    margin-right: 50px;
+  }
+}
 
 @media screen and (max-width: 850px) {
   #menu-btn {
@@ -295,7 +308,6 @@
   }
 }
 
-
 @media screen and (max-width: 768px) {
   .search-form {
     top: calc(100% + 16px);
@@ -362,11 +374,17 @@
     font-size: 30px;
     letter-spacing: 2px;
   }
+  .btn-entity {
+    padding: 0px 16px;
+    right: 3px;
+    bottom: 27px;
+  }
   .sports_card {
     width: 100%;
     max-width: 100%;
     margin: 10px;
   }
+
   .product_card_img {
     min-height: 100px;
   }
@@ -379,6 +397,9 @@
   .product_card_details .web_btn {
     font-size: 13px;
     padding: 9px 3px;
+  }
+  .product_row {
+    margin: 25px 73px;
   }
   .col {
     flex-basis: 100%;
@@ -408,9 +429,13 @@
   }
   .contact .content h2 {
     font-size: 2.5rem;
+    margin-right: 22px;
   }
   .contact .content p {
     font-size: 1.5rem;
+    line-height: 1.5;
+    margin-right: 27px;
+    letter-spacing: 0.1rem;
   }
   .gallery {
     margin: 0 2rem;
@@ -467,9 +492,19 @@
   }
 
   .footer .box-container .box {
-    padding: 1rem 48px;
+    padding: 1rem 12px;
     flex: 1 1 20rem;
     display: block;
+  }
+  .footer .box-container .box h3 {
+    font-size: 1.8rem;
+  }
+  .footer .box-container .box .share a {
+    margin: 1px;
+    padding: 0;
+    height: 3.5rem;
+    width: 3.5rem;
+    line-height: 3.5rem;
   }
 
   .footer .credit {
@@ -479,6 +514,12 @@
 }
 
 @media screen and (max-width: 375px) {
+  .section_title {
+    font-size: 20px;
+  }
+  .sub_title {
+    font-size: 20px;
+  }
   .product_card_details .btn {
     font-size: 12px;
   }
@@ -506,30 +547,33 @@
     font-size: 0.9rem;
     font-weight: 300;
   }
-  .footer .box-container .box {
-    padding: 1rem 32px;
-    flex: 1 1 18rem;
-    display: block;
+  .logo-end {
+    font-size: 2.3rem;
   }
+  
   .footer .box-container .box .share a {
-    height: 4rem;
-    width: 4rem;
+    margin: 1px;
+    padding: 0;
+    height: 3.5rem;
+    width: 3.5rem;
+    line-height: 3.5rem;
+  }
+  .footer .box-container .box {
+    padding: 1rem 2px;
+    flex: 1 1 16rem;
+    margin-left: 10px;
+  }
+  .footer .box-container .box h3 {
+    font-size: 1.5rem;
+  }
+  .footer .box-container .share {
+    margin-right: 16px;
+}
+  .product_row {
+    margin: 25px 53px;
   }
 }
 
-/* @media screen and (max-width:350px) {
-  .header_logo {
-    font-size: 20px;
-  }
-  .header_icons i {
-    font-size: 18px;
-    margin: 0 4px;
-  }
-  .header_logo a i {
-    margin-bottom: 2px;
-  }
-  
-} */
 
 @media screen and (max-width: 320px) {
   .btn-1 {
@@ -544,6 +588,12 @@
   .contactForm_login {
     padding: 2rem 2.5rem;
     width: 100%;
+  }
+  .contactForm {
+    margin-right: 27px;
+  }
+  .contactForm h2 {
+    font-size: 2.5rem;
   }
 
   .food-name {
@@ -567,10 +617,14 @@
     font-size: 11px;
     padding: 8px;
   }
-  .footer .box-container .box {
-    padding: 1rem 32px;
-    flex: 1 1 16rem;
-    display: block;
+  .product_row {
+    margin: 25px 20px;
   }
+
+ .footer .box-container .box {
+    padding: 1rem 6px;
+  }
+  
+
 }
 /* Media Query End */
