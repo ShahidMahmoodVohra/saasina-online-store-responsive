@@ -418,29 +418,8 @@
     margin-left: 0rem;
 }
   
-
-  
 }
-@media screen and (max-width:360px) {
-  .food-name {
-    top: 5.9rem;
-    left: 2rem;
-    
-  }
-
-  .food-description {
-    bottom: 5vw;
-    left: 2rem;
-    width: 78%;
-  }
-  .container-contact {
-    width: 95%;
-    margin-left: 0rem;
-}
-  
-
-  
-}
+ 
 
 @media screen and (max-width: 425px) {
   .section_title {
