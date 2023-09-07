@@ -65,7 +65,6 @@
 .navbar a:hover {
   border-bottom: 0.1rem solid #fff;
   padding-bottom: 0.5rem;
-  
 }
 
 #close-btn,
@@ -212,6 +211,8 @@
 }
 
 /* Media Query Start */
+@media screen and (max-width: 1440px) {
+}
 
 @media screen and (max-width: 1024px) {
   .product_row {
@@ -220,17 +221,7 @@
     margin: 25px auto;
     gap: 15px;
   }
-  .contact .content {
-    max-width: 100rem;
-    text-align: center;
-    padding-bottom: 4rem;
-  }
-  .container-contact {
-    max-width: 100rem;
-  }
-  .contactForm {
-    margin-right: 50px;
-  }
+  
 }
 
 @media screen and (max-width: 850px) {
@@ -323,15 +314,34 @@
   }
   .col {
     flex-basis: 50%;
+    
+  }
+  .container-contact {
+    width: 100%;
   }
   .contactForm {
-    width: 51%;
-    padding: 2rem 1.6rem;
+    padding: 4rem 8rem;
   }
-  .contactForm_login {
-    width: 95%;
-    padding: 2rem 1.6rem;
+  .container-contact .contactInfo {
+    width: 75%;
   }
+
+  .container-contact .contactInfo .box {
+    padding: 6rem 0rem 2rem 0rem;
+  }
+  .container-contact .contactInfo .box .icon {
+    min-width: 5rem;
+    height: 5rem;
+    font-size: 2.4rem;
+  }
+  .text_small {
+    font-size: 14px;
+  }
+  .btns{
+    margin-top: 0;
+    margin-left: -2rem;
+  }
+
   .gallery {
     margin: 5rem 8rem;
   }
@@ -356,8 +366,60 @@
     font-size: 2rem;
   }
   .footer .box-container .box {
-    padding: 1rem 84px;
+    padding: 1rem 80px;
   }
+}
+
+@media screen and (max-width: 600px) {
+
+  .col{
+    flex-basis: 100%;
+  }
+  
+
+  .contactForm .inputBox input, .contactForm .inputBox textarea {
+    width: 94%}
+  
+  .contactForm {
+    width: 75%;
+    padding: 3rem;
+  }
+  .container-contact .contactInfo {
+    width: 100%;
+  }
+  .container-contact .contactInfo .box .icon {
+    min-width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+  }
+  .text_small {
+    font-size: 12px;
+  }
+
+  .footer .box-container .box {
+    padding: 1rem 30px;
+  }
+}
+
+@media screen and (max-width:392px) {
+  .food-name {
+    top: 6rem;
+    left: 2rem;
+    
+  }
+
+  .food-description {
+    bottom: 5vw;
+    left: 2rem;
+    width: 78%;
+  }
+  .container-contact {
+    width: 95%;
+    margin-left: 0rem;
+}
+  
+
+  
 }
 
 @media screen and (max-width: 425px) {
@@ -401,42 +463,6 @@
   .product_row {
     margin: 25px 73px;
   }
-  .col {
-    flex-basis: 100%;
-  }
-  .container-contact {
-    flex-direction: column-reverse;
-  }
-  .container-contact-reg {
-    flex-direction: column;
-  }
-  .login_direction {
-    flex-direction: column;
-  }
-  .contactForm {
-    width: 90%;
-    padding: 2rem 3.6rem;
-    margin-bottom: 20px;
-  }
-  .contactForm_login {
-    width: 90%;
-    padding: 2rem 3.6rem;
-    margin-bottom: 0;
-  }
-  .btns_login {
-    padding: 0px 0px 17px 30px;
-    margin: 0;
-  }
-  .contact .content h2 {
-    font-size: 2.5rem;
-    margin-right: 22px;
-  }
-  .contact .content p {
-    font-size: 1.5rem;
-    line-height: 1.5;
-    margin-right: 27px;
-    letter-spacing: 0.1rem;
-  }
   .gallery {
     margin: 0 2rem;
   }
@@ -446,8 +472,8 @@
   }
   .food-name {
     position: absolute;
-    top: 8rem;
-    left: 4rem;
+    top: 7rem;
+    left: 3rem;
     font-size: 1.5rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -455,7 +481,7 @@
   }
   .food-description {
     position: absolute;
-    bottom: 16vw;
+    bottom: 14vw;
     left: 4rem;
     width: 64%;
     font-size: 1rem;
@@ -489,6 +515,53 @@
 
   .logo-end {
     font-size: 2.5rem;
+  }
+  .col {
+    flex-basis: 100%;
+  }
+  .contact {
+    padding: 3rem 0;
+  }
+  .container-contact {
+    width: 95%;
+    margin-left: 1rem;
+  }
+  .contactForm {
+    width: 95%;
+    padding: 2rem 0 2rem 3rem;
+  }
+  .container-contact .contactInfo {
+    flex-direction: column;
+  }
+  .container-contact .contactInfo .box {
+    padding: 4rem 4rem 2rem 10rem;
+  }
+
+  .container-contact .contactInfo .box .icon {
+    min-width: 4.5rem;
+    height: 4.5rem;
+  }
+  .container-contact .contactInfo .box .text {
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+    flex-direction: column;
+  }
+  .contact .content h2 {
+    font-size: 3.5rem;
+  }
+  .text_small {
+    font-size: 14px;
+  }
+  .btns_login {
+    padding: 0px 0px 17px 30px;
+    margin-left: 2rem;
+  }
+  .btn_contact{
+    margin-left: 2rem;
+  }
+
+  .footer .box-container .box {
+    padding: 1rem 20px;
   }
 
   .footer .box-container .box {
@@ -524,12 +597,6 @@
     font-size: 12px;
   }
 
-  .container-contact .contactInfo {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
   .food-name {
     position: absolute;
     top: 7rem;
@@ -550,7 +617,17 @@
   .logo-end {
     font-size: 2.3rem;
   }
-  
+  .container-contact {
+    width: 95%;
+    margin-left: 0rem;
+  }
+  .container-contact .contactInfo .box {
+  padding: 4rem 1rem 2rem 7rem;
+  }
+  .contactForm{
+    margin-left: 1.5rem;
+  }
+
   .footer .box-container .box .share a {
     margin: 1px;
     padding: 0;
@@ -568,12 +645,11 @@
   }
   .footer .box-container .share {
     margin-right: 16px;
-}
+  }
   .product_row {
     margin: 25px 53px;
   }
 }
-
 
 @media screen and (max-width: 320px) {
   .btn-1 {
@@ -590,11 +666,14 @@
     width: 100%;
   }
   .contactForm {
-    margin-right: 27px;
+    margin-left: 20px;
   }
   .contactForm h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
+  .contact .contactInfo .box {
+    padding: 4rem 0rem 2rem 4rem;
+}
 
   .food-name {
     position: absolute;
@@ -621,10 +700,8 @@
     margin: 25px 20px;
   }
 
- .footer .box-container .box {
+  .footer .box-container .box {
     padding: 1rem 6px;
   }
-  
-
 }
 /* Media Query End */

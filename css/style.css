@@ -267,7 +267,6 @@ p {
   color: var(--secondary);
 }
 
-
 /* Electronics section Starts */
 .category_items_row {
   flex-wrap: wrap;
@@ -433,7 +432,6 @@ p {
   transform: rotateY(-180deg);
 }
 
-
 .new_arrival h2 {
   text-align: center;
   text-decoration: underline;
@@ -545,7 +543,6 @@ form input::placeholder {
 /* electronics section end */
 
 /* category section start */
-
 
 .electronic_category {
   gap: 5rem;
@@ -961,16 +958,13 @@ form input::placeholder {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* background: url(../images/bg6.avif); */
   background: #818181;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
   opacity: 0.8;
 }
 
 .contact .content {
   /* max-width: 100rem; */
-  max-width: 1250px;
+  max-width: 950px;
   text-align: center;
   padding-bottom: 4rem;
 }
@@ -992,7 +986,8 @@ form input::placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 1250px;
+  flex-direction: column-reverse;
+  width: 950px;
   /* width: 100%; */
   margin-top: 3rem;
 }
@@ -1004,12 +999,12 @@ form input::placeholder {
 }
 .container-contact .contactInfo {
   display: flex;
-  flex-direction: column;
-  width: 50%;
+  /* flex-direction: column; */
+  /* width: 50%; */
 }
 .container-contact .contactInfo .box {
   position: relative;
-  padding: 2rem 2rem 0 0;
+  padding: 6rem 2rem 2rem 2rem;
   display: flex;
 }
 .container-contact .contactInfo .box .icon {
@@ -1037,7 +1032,6 @@ form input::placeholder {
   color: var(--secondary);
 }
 .contactForm {
-  /* width: 90%; */
   width: 100%;
   padding: 2rem 4rem;
   background: #fff;
@@ -1045,6 +1039,7 @@ form input::placeholder {
 .contactForm_login {
   width: 100%;
   padding: 2rem 1.6rem;
+  margin-bottom: 4rem;
 }
 .contactForm h2 {
   font-size: 3rem;
@@ -1271,7 +1266,6 @@ form input::placeholder {
   /* padding: 0 0 0 3.5rem; */
 }
 
-
 .footer .box-container .box p {
   font-size: 1.3rem;
   padding: 0.7rem 22px 0.7rem 0;
@@ -1315,5 +1309,3 @@ form input::placeholder {
   font-weight: lighter;
 }
 /* footer section end */
-
-
