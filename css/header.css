@@ -73,7 +73,6 @@
 }
 .cart-sidebar {
   background-color: var(--white);
-  /* background-color: #5a4343; */
   min-width: 350px;
   max-width: 350px;
   height: 100vh;
@@ -206,12 +205,16 @@
   pointer-events: all;
 }
 .search-form input::placeholder {
-  /* color: #000000a8 !important; */
   color: #313131 !important;
 }
 
 /* Media Query Start */
 @media screen and (max-width: 1440px) {
+  .btn-entity {
+    padding: 0px 20px;
+    right: 12px;
+    bottom: -8px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -221,7 +224,11 @@
     margin: 25px auto;
     gap: 15px;
   }
-  
+
+  .footer .box-container .box {
+    flex: 1 1 25rem;
+    padding: 1rem 17px;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -314,7 +321,6 @@
   }
   .col {
     flex-basis: 50%;
-    
   }
   .container-contact {
     width: 100%;
@@ -337,7 +343,7 @@
   .text_small {
     font-size: 14px;
   }
-  .btns{
+  .btns {
     margin-top: 0;
     margin-left: -2rem;
   }
@@ -365,21 +371,29 @@
     width: 64%;
     font-size: 2rem;
   }
+
+  .btn-entity {
+    font-size: 45px;
+    padding: 0px 25px;
+    right: 8px;
+    bottom: -8px;
+  }
+
   .footer .box-container .box {
     padding: 1rem 80px;
   }
 }
 
 @media screen and (max-width: 600px) {
-
-  .col{
+  .col {
     flex-basis: 100%;
   }
-  
 
-  .contactForm .inputBox input, .contactForm .inputBox textarea {
-    width: 94%}
-  
+  .contactForm .inputBox input,
+  .contactForm .inputBox textarea {
+    width: 94%;
+  }
+
   .contactForm {
     width: 75%;
     padding: 3rem;
@@ -401,11 +415,10 @@
   }
 }
 
-@media screen and (max-width:392px) {
+@media screen and (max-width: 392px) {
   .food-name {
     top: 6rem;
     left: 2rem;
-    
   }
 
   .food-description {
@@ -416,10 +429,8 @@
   .container-contact {
     width: 95%;
     margin-left: 0rem;
+  }
 }
-  
-}
- 
 
 @media screen and (max-width: 425px) {
   .section_title {
@@ -438,7 +449,7 @@
   .btn-entity {
     padding: 0px 16px;
     right: 3px;
-    bottom: 27px;
+    bottom: -10px;
   }
   .sports_card {
     width: 100%;
@@ -555,18 +566,20 @@
     padding: 0px 0px 17px 30px;
     margin-left: 2rem;
   }
-  .btn_contact{
+  .btn_contact {
     margin-left: 2rem;
   }
 
   .footer .box-container .box {
-    padding: 1rem 20px;
+    flex: 1 1 17rem;
+    padding: 30px 28px;
+    /* padding: 1rem 20px; */
   }
 
   .footer .box-container .box {
-    padding: 1rem 12px;
     flex: 1 1 20rem;
     display: block;
+    padding: 1rem 48px;
   }
   .footer .box-container .box h3 {
     font-size: 1.8rem;
@@ -621,9 +634,9 @@
     margin-left: 0rem;
   }
   .container-contact .contactInfo .box {
-  padding: 4rem 1rem 2rem 7rem;
+    padding: 4rem 1rem 2rem 7rem;
   }
-  .contactForm{
+  .contactForm {
     margin-left: 1.5rem;
   }
 
@@ -647,6 +660,11 @@
   }
   .product_row {
     margin: 25px 53px;
+  }
+
+  .footer .box-container .box {
+    flex: 1 1 17rem;
+    padding: 30px 28px;
   }
 }
 
@@ -672,7 +690,7 @@
   }
   .contact .contactInfo .box {
     padding: 4rem 0rem 2rem 4rem;
-}
+  }
 
   .food-name {
     position: absolute;
@@ -700,7 +718,8 @@
   }
 
   .footer .box-container .box {
-    padding: 1rem 6px;
+    flex: 1 1 15rem;
+    padding: 11px;
   }
 }
 /* Media Query End */
