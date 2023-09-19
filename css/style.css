@@ -1053,8 +1053,33 @@ form input::placeholder {
 }
 .text_small {
   text-transform: capitalize;
+  cursor: pointer;
+  line-height: 1.2;
+  transition: width 0.5s;
 }
-.text_small_email {
+
+.text_small_hover:hover {
+  opacity: 0.5;
+}
+.text_small-contact a {
+  color: #fff;
+}
+.text_small-contact {
+  line-height: 2;
+  transition: opacity 0.5s, width 0.5s;
+}
+
+.text_small a{
+  transition: border-bottom .5s;
+}
+
+.text_small a:hover {
+  padding-bottom: 2px;
+  border-bottom: 1px solid #fff;
+  line-height: 2px;
+}
+
+.text_email a {
   text-transform: lowercase;
 }
 .contact .content {
