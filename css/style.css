@@ -37,7 +37,6 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  /* background-image: radial-gradient(#f0e160, #bebbbb); */
   padding-top: 80px;
 }
 h1,
@@ -250,7 +249,7 @@ p {
 .chat-box {
   position: fixed;
   right: 5px;
-  bottom: 2px;
+  bottom: 1%;
   background: var(--secondary);
   color: var(--white);
   border: 1px solid #fff;
@@ -721,9 +720,9 @@ form input::placeholder {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 0px;
   margin-top: -5px;
-
   transform: translate(-1px, -45px);
 }
+
 .btn-1:hover {
   letter-spacing: 0.1rem;
 }
@@ -821,7 +820,7 @@ form input::placeholder {
 .gallery-link::after {
   content: "";
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 2rem;
   width: 90%;
   /* for hover effect width to zero for horizontal line */
@@ -848,7 +847,7 @@ form input::placeholder {
 }
 .food-name {
   position: absolute;
-  top: 10rem;
+  top: 25rem;
   left: 4rem;
   font-size: 2rem;
   font-weight: 700;
@@ -963,7 +962,6 @@ form input::placeholder {
 }
 
 .contact .content {
-  /* max-width: 100rem; */
   max-width: 950px;
   text-align: center;
   padding-bottom: 4rem;
@@ -988,7 +986,6 @@ form input::placeholder {
   justify-content: center;
   flex-direction: column-reverse;
   width: 950px;
-  /* width: 100%; */
   margin-top: 3rem;
 }
 .container-contact-reg {

@@ -225,6 +225,14 @@
     gap: 15px;
   }
 
+  .food-name {
+    top: 20rem;
+  }
+
+  .food-description {
+    bottom: 13vw;
+  }
+
   .footer .box-container .box {
     flex: 1 1 25rem;
     padding: 1rem 17px;
@@ -357,32 +365,24 @@
   }
 
   .gallery {
-    margin: 5rem 8rem;
+    margin: 9rem 8rem;
   }
   .food-img {
     width: 60vw;
     height: 90vw;
   }
+  
   .food-name {
-    position: absolute;
-    top: 15rem;
-    left: 8rem;
-    font-size: 3rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0;
+    top: 28rem;
   }
+
   .food-description {
-    position: absolute;
-    bottom: 22vw;
-    left: 6rem;
-    width: 64%;
-    font-size: 2rem;
+    bottom: 30vw;
   }
 
   .btn-entity {
-    font-size: 45px;
-    padding: 0px 25px;
+    font-size: 37px;
+    padding: 0px 18px;
     right: 8px;
     bottom: -8px;
   }
@@ -417,28 +417,20 @@
   .text_small {
     font-size: 12px;
   }
+  .food-name {
+    top: 22rem;
+  }
+
+  .food-description {
+    bottom: 23vw;
+  }
 
   .footer .box-container .box {
     padding: 1rem 30px;
   }
 }
 
-@media screen and (max-width: 392px) {
-  .food-name {
-    top: 6rem;
-    left: 2rem;
-  }
 
-  .food-description {
-    bottom: 5vw;
-    left: 2rem;
-    width: 78%;
-  }
-  .container-contact {
-    width: 95%;
-    margin-left: 0rem;
-  }
-}
 
 @media screen and (max-width: 425px) {
   .section_title {
@@ -455,9 +447,10 @@
     letter-spacing: 2px;
   }
   .btn-entity {
-    padding: 0px 16px;
+    padding: 0px 12px;
     right: 3px;
     bottom: -10px;
+    font-size: 27px;
   }
   .sports_card {
     width: 100%;
@@ -482,28 +475,29 @@
     margin: 25px 73px;
   }
   .gallery {
-    margin: 0 2rem;
+    margin: 4rem 2rem;
   }
+
   .food-img {
     width: 50vw;
     height: 80vw;
   }
   .food-name {
     position: absolute;
-    top: 7rem;
+    top: 14rem;
     left: 3rem;
     font-size: 1.5rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0;
+    
   }
   .food-description {
     position: absolute;
-    bottom: 14vw;
+    bottom: 8vw;
     left: 4rem;
     width: 64%;
     font-size: 1rem;
   }
+
+  
   .cart-btn,
   .search-btn {
     display: none;
@@ -606,6 +600,46 @@
   }
 }
 
+@media screen and (max-width: 392px) {
+  .food-name {
+    top: 13rem;
+    left: 2rem;
+  }
+
+  .food-description {
+    bottom: 5vw;
+    left: 2rem;
+    width: 78%;
+  }
+  .container-contact {
+    width: 95%;
+    margin-left: 0rem;
+  }
+  .footer .box-container .box .share a {
+    margin: 1px;
+    padding: 0;
+    height: 3.5rem;
+    width: 3.5rem;
+    line-height: 3.5rem;
+  }
+  .footer .box-container .box {
+    padding: 1rem 5rem;
+    flex: 1 1 16rem;
+    margin-left: 10px;
+  }
+  .footer .box-container .box h3 {
+    font-size: 1.4rem;
+  }
+  .footer .box-container .share {
+    margin-right: 16px;
+  }
+  .product_row {
+    margin: 25px 53px;
+  }
+
+  
+}
+
 @media screen and (max-width: 375px) {
   .section_title {
     font-size: 20px;
@@ -619,7 +653,7 @@
 
   .food-name {
     position: absolute;
-    top: 7rem;
+    top: 13rem;
     left: 3rem;
     font-size: 1.3rem;
     font-weight: 500;
@@ -628,7 +662,7 @@
   }
   .food-description {
     position: absolute;
-    bottom: 17vw;
+    bottom: 8vw;
     left: 3rem;
     width: 68%;
     font-size: 0.9rem;
@@ -702,7 +736,7 @@
 
   .food-name {
     position: absolute;
-    top: 6rem;
+    top: 11rem;
     left: 2rem;
     font-size: 1.1rem;
     font-weight: 500;
@@ -711,7 +745,7 @@
   }
   .food-description {
     position: absolute;
-    bottom: 12vw;
+    bottom: 4vw;
     left: 2rem;
     width: 68%;
     font-size: 0.8rem;
