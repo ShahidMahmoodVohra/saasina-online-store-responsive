@@ -86,6 +86,7 @@
   opacity: 0;
   pointer-events: none;
   transition: 0.3s linear;
+  z-index: 1000;
 }
 .cart-sidebar.opened {
   transform: translateX(0);
