@@ -56,6 +56,30 @@ p {
   padding-top: 10px;
 }
 
+
+/* scroll-watcher Kevin Powell Lecture on youtube */
+
+.scroll-watcher{
+  height: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: #525151;
+  background-color: lime;
+  background: linear-gradient(to right, #297ce9, #e41e3f);
+  transform-origin: left;
+  width: 100%;
+  scale: 0 1;
+  animation: scroll-watcher linear;
+  animation-timeline: scroll();
+}
+
+@keyframes scroll-watcher{
+  to { scale: 1 1;}
+}
+
+/* End of scroll-watcher Kevin Powell Lecture on youtube */
+
 /* General css classes */
 .web_container {
   max-width: 1250px;
@@ -266,6 +290,7 @@ p {
   color: var(--secondary);
 }
 
+
 /* Electronics section Starts */
 .category_items_row {
   flex-wrap: wrap;
@@ -289,6 +314,32 @@ p {
   height: 100%;
   width: 100%;
 }
+
+/* Scroll Animations Kevin Powell Lecture */
+@media (prefers-reduced-motion:no-preference){
+
+.category_card > img{
+  scale: .8;
+  opacity: 0;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range: contain;
+  animation-range: 250px 500px;
+  animation-range: entry;
+
+}
+
+@keyframes fade-in {
+  
+  to {
+    scale: 1; opacity: 1;
+  }
+}
+
+}
+
+/* End of  Scroll Animations Kevin Powell Lecture */
+
 /* Electronics section Ends */
 
 /* Sports section Starts */
