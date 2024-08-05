@@ -202,7 +202,7 @@
 }
 .search-form.opened {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateY(0px);
   pointer-events: all;
 }
 .search-form input::placeholder {

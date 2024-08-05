@@ -157,12 +157,10 @@ p {
   max-width: 100%;
 }
 .btn:hover {
-  color: #fff;
-  background: #e41e3f;
+  color: #000;
   background-color: rgba(165, 165, 165, 0.2);
 
   letter-spacing: 0.2rem;
-  border: 1px solid #e41e3f;
   border: 1px solid #000;
 }
 
