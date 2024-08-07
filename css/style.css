@@ -211,6 +211,13 @@ p {
   /* position: fixed; */
 }
 
+.btn-sports a {
+  padding: 0 12px;
+}
+.btn-sports a i{
+  font-size: 25px;
+}
+
 .btn-entity {
   background: var(--secondary);
   color: var(--optional);
@@ -646,7 +653,7 @@ form input::placeholder {
   box-shadow: -0.1rem -0.1rem 0.1rem #333;
 }
 .electronic_card_main:hover {
-  transform: rotateY(10deg) skewX(-1deg) translateY(-3rem);
+  transform: rotateY(2deg) skewX(0deg) translateY(-1rem);
   box-shadow: 1.5rem 1.5rem 1.5rem #888;
 }
 
