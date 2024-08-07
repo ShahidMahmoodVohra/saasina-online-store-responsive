@@ -352,7 +352,7 @@ p {
 .product_row {
   flex-wrap: wrap;
   max-width: 1080px;
-  margin: 25px auto;
+  margin: 75px auto;
   gap: 15px;
 }
 .product_card {
